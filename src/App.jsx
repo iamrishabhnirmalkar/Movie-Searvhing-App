@@ -8,12 +8,29 @@ function App() {
   const [allMovieData, setallMovieData] = useState([]);
   const [searchMovie, setsearchMovie] = useState("");
 
+  const fetchMovieData = async () => {
+    try {
+      const res = await fetch(
+        `https://omdbapi.com/?s=${searchMovie}&apikey=a1de9591`
+      );
+      const data = await res.json();
+      setallMovieData(data.Search);
+      console.log(data.Search);
+    } catch (error) {
+      console.log("Error In The Gating Data");
+    }
+  };
+
   return (
     <>
       <Navbar />
       <div className="bg">
-        <Searchbar />
-        <MovieCard />
+        <Searchbar
+          searchMovie={searchMovie}
+          setsearchMovie={setsearchMovie}
+          fetchMovieData={fetchMovieData}
+        />
+        <MovieCard allMovieData={allMovieData} />
       </div>
     </>
   );
