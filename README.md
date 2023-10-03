@@ -1,8 +1,51 @@
-# React + Vite
+# MovieOkk - Movie Searching App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is Movie Searching App where you can serach any movie , web series and the data fatch from the api.
+[https://movieokk.netlify.app/]
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Description](#description)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+
+## Description
+
+The Movie Searching App is a powerful tool that allows users to search for movies and web series and retrieve detailed information from the Open Movie Database (OMDb) API. With this app, users can easily access a vast database of movie and web series data, including titles, release dates, posters, and much more.
+
+## Getting Started
+
+To get started with the Movies Okk, follow these steps:
+
+### Prerequisites
+
+Before you begin, ensure you have the following prerequisites:
+
+- [Vitejs](https://vitejs.dev/)
+- [Node.js](https://nodejs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [VS Code](https://code.visualstudio.com/) or your preferred IDE
+
+### Installation
+
+1. Clone the project repository:
+
+   ```bash
+   $ git clone https://github.com/iamrishabhnirmalkar/Movie-Searvhing-App.git
+   $ cd RealState
+
+   ```
+
+2. Install the project dependencies:
+
+   ```bash
+   $ npm install
+
+   ```
+
+3. Start the development server:
+
+   ```bash
+   $ npm run dev
+   ```
